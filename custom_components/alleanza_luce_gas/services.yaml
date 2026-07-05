@@ -1,0 +1,4 @@
+force_update:
+  name: Forza aggiornamento
+  description: Forza l'aggiornamento immediato dei dati dall'area clienti.
+  fields: {}

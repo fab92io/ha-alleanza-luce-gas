@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import logging
 
+import voluptuous as vol
+
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
-from homeassistant.core import HomeAssistant
+from homeassistant.core import HomeAssistant, ServiceCall
 
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
@@ -32,6 +34,13 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     hass.data[DOMAIN][entry.entry_id] = coordinator
 
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+
+    async def force_update(call: ServiceCall) -> None:
+        await coordinator.async_refresh()
+
+    hass.services.async_register(
+        DOMAIN, "force_update", force_update, schema=vol.Schema({})
+    )
 
     return True
 
