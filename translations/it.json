@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Alleanza Luce e Gas - Login",
+        "description": "Inserisci le credenziali dell'area clienti di Alleanza Luce e Gas",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi al server. Verifica la connessione internet.",
+      "invalid_auth": "Email o password non validi.",
+      "unknown": "Errore sconosciuto."
+    },
+    "abort": {
+      "already_configured": "Account già configurato."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Alleanza Luce e Gas - Opzioni",
+        "description": "Configura l'intervallo di aggiornamento",
+        "data": {
+          "update_interval": "Intervallo di aggiornamento (ore)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "alleanza_luce_gas",
+  "name": "Alleanza Luce e Gas",
+  "codeowners": ["@fabio.vaccarello"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/fabio.vaccarello/alleanza_luce_gas",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "1.0.0"
+}

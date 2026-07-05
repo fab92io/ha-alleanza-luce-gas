@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi al server. Verifica la connessione internet.",
+      "invalid_auth": "Email o password non validi.",
+      "unknown": "Errore sconosciuto."
+    },
+    "abort": {
+      "already_configured": "Account già configurato."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Intervallo di aggiornamento (ore)"
+        }
+      }
+    }
+  }
+}
